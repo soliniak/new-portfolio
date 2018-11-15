@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Cache-control" content="public" max-age="604800" />
+    <link rel="stylesheet" type="text/css" href="style/bundle/reset.css" />
+    <link rel="stylesheet" type="text/css" href="style/bundle/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <title>Rafi's - Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu__item" data-mobile="true" aria-hidden="false">
+            <a class="menu__link" href="#">
+					<i class="fas fa-user-alt fa--icon"></i> <span>O mnie</span>
+            </a>
+          </li>
+          <li class="menu__item" data-mobile="true" aria-hidden="false">
+            <a class="menu__link link--active" href="#">
+              <i class="far fa-folder-open fa--icon"></i
+              ><span>Portfolio</span></a
+            >
+          </li>
+          <li class="menu__item" data-mobile="true" aria-hidden="false">
+            <a class="menu__link" href="#">
+              <i class="far fa-handshake fa--icon"></i>Kontakt</span>
+            </a>
+          </li>
+          <li class="menu__item" data-mobile="false" aria-hidden="false">
+            <a class="menu__link" href="https://github.com/soliniak">
+              <i class="fab fa-github fa--icon"></i>
+              Github</a
+            >
+          </li>
+          <li class="menu__item" data-mobile="false" aria-hidden="false">
+			<a class="menu__link" href="https://codepen.io/Rafi-R">
+				<i class="fab fa-codepen fa--icon"></i>
+				Codepen</a>
+          </li>
+          <li class="menu__item" data-mobile="false" aria-hidden="false">
+            <a class="menu__link" href="mailto:soliniak@gmail.com"
+              >soliniak@gmail.com</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+		<article class="card card--mobile">
+			<div class="card__description">
+				<h2 class="card__title">Yoga
+						<a href="#" class="btn--square"> live </a>
+						
+				</h2>
+				<p class="card__text">
+					Weekly WebDev Challange #16
+					<br>
+				</p>
+				<div class="card__stack">
+					<i class="fab fa-html5 icon--stack"></i>
+					<i class="fab fa-sass icon--stack"></i>
+					<i class="fab fa-js icon--stack"></i>
+					<i class="fab fa-npm icon--stack"></i>
+					<i class="fab fa-gulp icon--stack"></i>
+					<a href="#" class="btn--square"> src </a>
+
+				</div>
+			</div>
+			<picture class="image__container">
+				<source type="image/webp" srcset="img/project_icons/yoga.webp" class="card__image" />
+				<img src="img/project_icons/yoga.jpg" alt="a butterfly" class="card__image" />
+			</picture>		
+		</article>
+	</main>
+    <footer class="footer"></footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

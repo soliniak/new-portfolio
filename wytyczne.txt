@@ -1,0 +1,19 @@
+Mobile:
+O mnie Portfolio Kontakt
+
+Desktop:
+O mnie 
+Portfolio 
+Kontakt
+github
+codepen
+e-mail
+
+article:
+img
+short description
+stack
+
+Change lang icon?
+
+mobile first
