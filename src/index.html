@@ -4,6 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="Cache-control" content="public" max-age="604800" />
+    <meta property="og:title" content="Rafi's - Portfolio" />
+    <meta property="og:description" content="Rafi, front-end z Piaseczna. Zobacz portfolio." />
+    <meta property="og:type" content="Website" />
+    <!-- <meta property="og:url" content="https://soliniak.github.io/examples/zest/" />
+    <meta property="og:image" content="https://soliniak.github.io/examples/zest/img/zest-og.jpg" /> -->
     <link rel="stylesheet" type="text/css" href="style/bundle/reset.css" />
     <link rel="stylesheet" type="text/css" href="style/bundle/style.css" />
     <link
@@ -27,18 +32,18 @@
       <nav class="nav">
         <ul class="menu">
           <li class="menu__item" data-mobile="true" aria-hidden="false">
-            <a class="menu__link" href="#">
+            <a class="menu__link btn--about" href="#">
 					<i class="fas fa-user-alt fa--icon"></i> <span>O mnie</span>
             </a>
           </li>
           <li class="menu__item" data-mobile="true" aria-hidden="false">
-            <a class="menu__link link--active" href="#">
+            <a class="menu__link link--active btn--portfolio" href="#">
               <i class="far fa-folder-open fa--icon"></i
               ><span>Portfolio</span></a
             >
           </li>
           <li class="menu__item" data-mobile="true" aria-hidden="false">
-            <a class="menu__link" href="#">
+            <a class="menu__link btn--contact" href="#">
               <i class="far fa-handshake fa--icon"></i>Kontakt</span>
             </a>
           </li>
@@ -62,26 +67,35 @@
     </header>
 
   <main class="main" id="main">
-    <article class="card">
-      <div class="card__description">
-          <div class="card__header">
-              <h2 class="card__title">Rafał Soliński</h2>
-          </div>
-          <p class="card__text">
-            Junior Front-End Developer <br>
-            Piaseczno <br>
-            soliniak@gmail.com <br>
-            więcej...
-          </p>
-        </div>
-        <picture class="image__container">
-          <!-- <source type="image/webp" srcset="img/project_icons/me.webp" class="card__image" /> -->
-          <img src="img/project_icons/me.png" alt="Rafał Soliński" class="card__image" />
-        </picture>	
-      </article>
+    <section class="about" id="about">
+      Tutaj będzie mój ryj.
+    </section>
+    <section class="portfolio" id="portfolio">
+        <article class="card">
+            <div class="card__description">
+                <div class="card__header">
+                    <h2 class="card__title">Rafał Soliński</h2>
+                </div>
+                <p class="card__text">
+                  <p>Junior Front-End Developer</p>
+                  <p>Piaseczno</p>
+                  <p> <a href="mailto:soliniak@gmail.com" class="link--blue">soliniak@gmail.com</a></p>
+                  <p><a href="#" class="btn--more">więcej...</a></p>
+                </p>
+              </div>
+              <picture class="image__container">
+                <source type="image/webp" srcset="img/project_icons/me.webp" class="card__image" />
+                <img src="img/project_icons/me.png" alt="Rafał Soliński - Front-End Developer" class="card__image" />
+              </picture>	
+            </article>
+    </section>
+    <section class="contact" id="contact">
+        Tutaj będzie formularz.
+      </section>
 
   </main>
     <footer class="footer"></footer>
-    <script src="js/script.js"></script>
+    <script src="js/projects.js" type="module"></script>
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>

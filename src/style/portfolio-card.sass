@@ -1,5 +1,13 @@
 $border-color: #dedede
 .main
+    display: flex
+    flex-direction: row
+    width: 100vw
+    position: relative
+.about
+    position: absolute
+    left: -100vw
+.portfolio
     align-self: center
     justify-items: center
     display: grid
@@ -7,6 +15,16 @@ $border-color: #dedede
     grid-gap: 1rem
     padding-top: 1rem
     margin-bottom: calc(50px + 1rem)
+    position: absolute
+    left: 0
+    top: 0
+.contact
+    position: absolute
+    left: 100vw
+.about, .portfolio, .contact
+    width: 100vw
+    transition: all .4s ease
+
 .card
     width: calc(100% - 2rem)
     height: 100px
@@ -71,3 +89,6 @@ $border-color: #dedede
     font-size: .5rem
 .btn--live
     margin-right: 5px
+.btn--more
+    float: right
+    margin-right: 10px    
