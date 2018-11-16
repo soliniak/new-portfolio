@@ -32,12 +32,12 @@
       <nav class="nav">
         <ul class="menu">
           <li class="menu__item" data-mobile="true" aria-hidden="false">
-            <a class="menu__link btn--about" href="#">
+            <a class="menu__link link--active btn--about" href="#">
 					<i class="fas fa-user-alt fa--icon"></i> <span>O mnie</span>
             </a>
           </li>
           <li class="menu__item" data-mobile="true" aria-hidden="false">
-            <a class="menu__link link--active btn--portfolio" href="#">
+            <a class="menu__link btn--portfolio" href="#">
               <i class="far fa-folder-open fa--icon"></i
               ><span>Portfolio</span></a
             >
@@ -68,17 +68,85 @@
 
   <main class="main" id="main">
     <section class="about" id="about">
-      Tutaj będzie mój ryj.
+        <article class="card">
+            <div class="card__about">
+                <div class="card__header">
+                    <h1 class="card__title">Rafał Soliński</h1>
+                </div>
+                <div class="card__text">
+                  <p>Junior Front-End Developer</p>
+                  <p>Piaseczno k. Warszawy</p>
+                  <p> <a href="mailto:soliniak@gmail.com" class="link--blue">soliniak@gmail.com</a></p>
+                </div>
+              </div>
+              <picture class="image__container">
+                  <source type="image/webp" srcset="img/project_icons/me.webp" class="card__image" />
+                  <img src="img/project_icons/me.png" alt="Rafał Soliński - Front-End Developer" class="card__image" />
+                </picture>	
+            </article>
+      <div class="card about__skillset">
+        <p class="techstack">
+            <i class="fab fa-html5 icon--stack"></i>
+            <i class="fab fa-css3-alt icon--stack"></i>
+            <i class="fab fa-sass icon--stack"></i>
+            <i class="fab fa-js icon--stack"></i>
+            <i class="fab fa-npm icon--stack"></i>
+            <i class="fab fa-gulp icon--stack"></i>
+            <i class="fab fa-react icon--stack"></i>
+            <i class="fab fa-node icon--stack"></i>
+            <i class="fab fa-github icon--stack"></i>
+            <i class="fab fa-google icon--stack"></i>
+            <i class="fab fa-stack-overflow icon--stack"></i>
+        </p>
+      </div>
+      <p class="card about__text">
+          <!-- Front End jest moją pasją już od dawna, a każdą wolną chwilę staram się spędzać na dokształcaniu się. Moje obecne stanowisko nie pozwala na poświęcenie się temu w tak dużym wymiarze w jakim bym chciał. W związku z tym, moim obecnym celem jest zajmowanie się programowaniem w pełni zawodowo, aby móc na rozwój poświęcać jeszcze więcej czasu niż dotychczas i stawać się coraz lepszym w tym co robię. -->
+          W paru słowach o mnie.
+          Mieszkam w Piasecznie, interesuję się programowaniem od dawna, 
+          a swój poziom w web devie oceniam na solidnego juniora. 
+          Na chwilę obecną jestem mocno zdeterminowany, 
+          żeby zdobyć komercyjne doświadczenie jako front-end developer. 
+          Dobrze sobie radzę z rozwiązywaniem napotkanych problemów. 
+          Jestem samodzielny. Sprawnie korzystam z google czy stackoverflow. 
+          Czytanie dokumentacji nie sprawia mi problemów. 
+          W miarę umiejętności wdrażam w swoje projekty takie metodyki jak BEM, DRY czy KISS.
+          Na obecnym etapie wdrażam się w REACT, w przyszłości mam zamiar dodać do stacka Angulara. 
+
+      </p>
+      
+          <ul class="card about__text">
+            <li class="what-i-use">SASS</li>
+            <li class="what-i-use">GULP</li>
+            <li class="what-i-use">HTML5</li>
+            <li class="what-i-use">RWD</li>
+            <li class="what-i-use">JavaScript</li>
+            <li class="what-i-use">REACT</li>
+            <li class="what-i-use">Photoshop</li>
+            <li class="what-i-use">PageSpeed Tools Insights</li>
+            <li class="what-i-use">GIT</li>
+            <li class="what-i-use"></li>
+            <li class="what-i-use"></li>
+            <li class="what-i-use"></li>
+          </ul>
+          <h3 class="skill__title">
+              W mniejszym stopniu:
+          </h3>
+          <ul>
+            <li class="what-i-use">JQuery</li>
+            <li class="what-i-use">Node.js</li>
+            <li class="what-i-use">PHP</li>
+          </ul>
+      
     </section>
     <section class="portfolio" id="portfolio">
         <article class="card">
             <div class="card__description">
                 <div class="card__header">
-                    <h2 class="card__title">Rafał Soliński</h2>
+                    <h1 class="card__title">Rafał Soliński</h1>
                 </div>
                 <p class="card__text">
                   <p>Junior Front-End Developer</p>
-                  <p>Piaseczno</p>
+                  <p>Piaseczno k. Warszawy</p>
                   <p> <a href="mailto:soliniak@gmail.com" class="link--blue">soliniak@gmail.com</a></p>
                   <p><a href="#" class="btn--more">więcej...</a></p>
                 </p>

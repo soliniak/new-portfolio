@@ -24,6 +24,7 @@ Object.entries(Projects).forEach(([project, pval]) => {
       ${pval.alt}
     </p>
     <div class="card__stack">
+    
       ${stackData}
     </div>
   </div>
@@ -55,7 +56,12 @@ const cards = document.querySelectorAll(".card");
 const btnAbout = document.querySelector(".btn--about");
 const btnPortfolio = document.querySelector(".btn--portfolio");
 const btnContact = document.querySelector(".btn--contact");
+const btnMore = document.querySelector(".btn--more");
 
+btnMore.addEventListener("click", () => {
+  activeSection(-100);
+  btnAbout.classList.add("link--active");
+});
 btnAbout.addEventListener("click", () => {
   activeSection(-100);
   btnAbout.classList.add("link--active");

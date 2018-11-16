@@ -59,7 +59,7 @@ const Projects = {
     src: "https://github.com/soliniak/zapakujloremipsum",
     img: "img/project_icons/zapakujlorem.jpg",
     webp: "img/project_icons/zapakujlorem.webp",
-    alt: "WWW - zapakujloremipsum - zadanie rekrutacyjne",
+    alt: "WWW - Landing Page",
     order: "40",
     stack: {
       html5: ["true", '<i class="fab fa-html5 icon--stack"></i>'],

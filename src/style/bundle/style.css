@@ -1,3 +1,61 @@
+.about, .portfolio, .contact {
+  width: 100vw;
+  transition: all .4s ease; }
+
+.about {
+  position: absolute;
+  left: calc(0vw - 0vw);
+  padding: 1rem; }
+
+.portfolio {
+  align-self: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 50px;
+  position: absolute;
+  left: calc(100vw - 0vw);
+  top: 0; }
+
+.contact {
+  position: absolute;
+  left: calc(200vw - 0vw); }
+
+.about {
+  display: grid;
+  grid-gap: 1rem; }
+  .about__text {
+    padding: 10px 15px;
+    font-size: .9rem;
+    line-height: 1.2rem;
+    color: #b3b3b3; }
+  .about__skillset {
+    padding: 5px; }
+
+.card__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px;
+  font-size: 10px;
+  width: 100%; }
+
+.face__container {
+  background-color: #fff;
+  text-align: center;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 1px #a7a7a738; }
+
+.techstack {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 15px; }
+
 .header {
   width: 100%;
   height: 50px;
@@ -47,33 +105,9 @@
   width: 100vw;
   position: relative; }
 
-.about {
-  position: absolute;
-  left: -100vw; }
-
-.portfolio {
-  align-self: center;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  padding-top: 1rem;
-  margin-bottom: calc(50px + 1rem);
-  position: absolute;
-  left: 0;
-  top: 0; }
-
-.contact {
-  position: absolute;
-  left: 100vw; }
-
-.about, .portfolio, .contact {
-  width: 100vw;
-  transition: all .4s ease; }
-
 .card {
-  width: calc(100% - 2rem);
-  height: 100px;
+  width: 100%;
+  min-height: 50px;
   background-color: #fff;
   box-shadow: 0 0 20px 1px #a7a7a738;
   border-radius: 5px;
@@ -86,12 +120,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px;
+    padding: 10px;
     font-size: 10px;
     width: 100%; }
   .card__image {
     object-fit: cover;
-    height: 100%;
+    display: block;
+    height: auto;
     width: 100px;
     border-radius: 5px 0 0 5px; }
   .card__header {
@@ -117,13 +152,19 @@
     padding: 5px 5px 0 0; }
 
 .image__container {
-  height: 100%;
+  height: 100px;
   width: 100px;
-  order: -1; }
+  order: -1;
+  display: flex;
+  justify-content: flex-start; }
 
 .icon--stack {
   font-size: 1rem;
-  color: #b3b3b3;
+  color: #b3b3b3; }
+  .icon--stack:hover {
+    color: #0072ea; }
+
+.card__stack .icon--stack {
   margin-left: 10px; }
 
 .btn--square {

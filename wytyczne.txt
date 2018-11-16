@@ -17,3 +17,5 @@ stack
 Change lang icon?
 
 mobile first
+
+discord
