@@ -106,6 +106,24 @@ const Projects = {
       sass: ["true", '<i class="fab fa-sass icon--stack"></i>'],
       react: ["true", '<i class="fab fa-react icon--stack"></i>']
     }
+  },
+  tictactoe: {
+    name: "Tic-tac-toe",
+    live: "https://s.codepen.io/Rafi-R/debug/NjOwGV/YvAgOnRKbPYA",
+    src: "https://codepen.io/Rafi-R/pen/NjOwGV",
+    img: "img/project_icons/tictactoe.jpg",
+    webp: "img/project_icons/tictactoe.webp",
+    alt: "Game - simple and funny",
+    order: "1",
+    stack: {
+      html5: ["true", '<i class="fab fa-html5 icon--stack"></i>'],
+      js: ["true", '<i class="fab fa-js icon--stack"></i>'],
+      gulp: ["false", '<i class="fab fa-gulp icon--stack"></i>'],
+      photoshop: ["false", ""],
+      npm: ["false", '<i class="fab fa-npm icon--stack"></i>'],
+      sass: ["true", '<i class="fab fa-sass icon--stack"></i>'],
+      react: ["false", '<i class="fab fa-react icon--stack"></i>']
+    }
   }
 };
 

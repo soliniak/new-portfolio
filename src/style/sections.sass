@@ -1,18 +1,19 @@
 .about, .portfolio, .contact
     width: 100vw
-    transition: all .4s ease
+    transition: all $animation-speed ease
+    padding: 1rem
+    padding-top: calc(100px + 1rem)
+    margin-bottom: 150px
+    // overflow: hidden
 .about
     position: absolute
     left: calc(0vw - #{$start-section})
-    padding: 1rem
 .portfolio
     align-self: center
     justify-items: center
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
     grid-gap: 1rem
-    padding: 1rem
-    margin-bottom: 50px
     position: absolute
     left: calc(100vw - #{$start-section})
     top: 0
