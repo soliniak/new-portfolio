@@ -61,6 +61,7 @@ const cards = document.querySelectorAll(".card");
 const btnAbout = document.querySelector(".btn--about");
 const btnPortfolio = document.querySelector(".btn--portfolio");
 const btnContact = document.querySelector(".btn--contact");
+const menuLink = document.querySelectorAll(".menu__link");
 const btnGotoContact = document.querySelector(".btn--goto-contact");
 
 const aboutSection = -100,
@@ -75,8 +76,6 @@ btnGotoContact.addEventListener("click", () => {
 });
 
 menu.addEventListener("click", function(e) {
-  e.preventDefault();
-
   if (e.target) {
     let offset;
     const sectionTarget = e.target.getAttribute("href");
@@ -85,10 +84,16 @@ menu.addEventListener("click", function(e) {
     if (sectionTarget == "#portfolio") offset = 0;
     if (sectionTarget == "#contact") offset = 100;
 
-    const section = document.querySelector(sectionTarget);
+    if (
+      sectionTarget == "#about" ||
+      sectionTarget == "#portfolio" ||
+      sectionTarget == "#contact"
+    ) {
+      e.preventDefault();
+      const section = document.querySelector(sectionTarget);
 
-    sectionHeight(section);
-
+      sectionHeight(section);
+    }
     activeSection(offset);
     e.target.classList.add("link--active");
   }
@@ -107,7 +112,7 @@ let activeSection = offset => {
   portfolio.style.left = portfolioSection - offset + "vw";
   contact.style.left = contactSection - offset + "vw";
 
-  btnAbout.classList.remove("link--active");
-  btnPortfolio.classList.remove("link--active");
-  btnContact.classList.remove("link--active");
+  [].forEach.call(menuLink, link => {
+    link.classList.remove("link--active");
+  });
 };

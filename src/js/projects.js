@@ -90,7 +90,7 @@ const Projects = {
     }
   },
   weatherApp: {
-    name: "weatherApp",
+    name: "weather",
     live: "https://soliniak.github.io/Weather-App/",
     src: "https://github.com/soliniak/Weather-App",
     img: "img/project_icons/weather-app.jpg",
@@ -108,7 +108,7 @@ const Projects = {
     }
   },
   tictactoe: {
-    name: "Tic-tac-toe",
+    name: "TicTacToe",
     live: "https://s.codepen.io/Rafi-R/debug/NjOwGV/YvAgOnRKbPYA",
     src: "https://codepen.io/Rafi-R/pen/NjOwGV",
     img: "img/project_icons/tictactoe.jpg",

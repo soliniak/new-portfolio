@@ -1,6 +1,7 @@
 .about
     display: grid
-    grid-gap: 1rem
+    grid-gap: $gap
+    grid-template-columns: 100%
     &__text
         padding: 10px 15px
         font-size: .9rem
@@ -8,7 +9,6 @@
         color: $link-grey
         flex-direction: column
         list-style: circle
-
     &__skillset
         display: flex
         align-items: center
@@ -31,3 +31,15 @@
 
 .space
     margin-top: 10px
+
+// ---------------------------- 1024
+@media (min-width: 1024px)
+    $gap: 2rem
+    .about
+        grid-gap: $gap
+        padding: 0 $gap
+        padding-bottom: calc(100px + #{$gap})
+    .btn--goto-contact
+        display: none
+    .about__text
+        line-height: 1.5rem

@@ -1,22 +1,35 @@
 .about, .portfolio, .contact
     width: 100vw
     transition: all $animation-speed ease
-    padding: 1rem
-    padding-top: calc(100px + 1rem)
-    margin-bottom: 150px
-    // overflow: hidden
-.about
+    padding: 0 1rem
     position: absolute
+    // transform: translate(0 ,calc(100px + 1rem))
+    padding-bottom: calc(100px + #{$gap} * 2)
+    // margin-bottom: 150px
+    // overflow: hidden
+    top: calc(100px + #{$gap})
+
+.about
     left: calc(0vw - #{$start-section})
+
 .portfolio
     align-self: center
     justify-items: center
     display: grid
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
     grid-gap: 1rem
-    position: absolute
     left: calc(100vw - #{$start-section})
-    top: 0
+    
 .contact
-    position: absolute
     left: calc(200vw - #{$start-section})
+
+// ---------------------------- 1024
+@media (min-width: 1024px)
+    $gap: 2rem
+    .about, .portfolio, .contact
+        width: calc(100vw - #{$menu-vertical})
+        transform: translate(#{$menu-vertical} ,0)
+        padding-bottom: 2rem
+        top: calc(100px + #{$gap})
+    // .contact
+    //     transform: translate(200px, calc(100px + 5px))
