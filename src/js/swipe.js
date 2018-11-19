@@ -1,6 +1,6 @@
 const btnAbout = document.querySelector(".btn--about"),
   btnPortfolio = document.querySelector(".btn--portfolio"),
-  btnContact = document.querySelector(".btn--contact"),
+  btnContact2 = document.querySelector(".btn--contact"),
   btnGoContact = document.querySelector(".btn--goto-contact");
 let mouseDownPosition = null,
   trackPosition = 0;
@@ -17,22 +17,32 @@ function move(e) {
   if (mouseDownPosition || mouseDownPosition === 0) {
     let calculatedDirection = unify(e).clientX - mouseDownPosition,
       leftOrRight = Math.sign(calculatedDirection);
-    trackPosition += leftOrRight;
+    let threshold = +(
+      (leftOrRight * calculatedDirection) /
+      body.offsetWidth
+    ).toFixed(2);
+
+    if (threshold > 0.15) {
+      trackPosition += leftOrRight;
+    }
+
     btnAbout.addEventListener("click", () => {
       trackPosition = 1;
     });
     btnPortfolio.addEventListener("click", () => {
       trackPosition = 0;
     });
-    btnContact.addEventListener("click", () => {
+    btnContact2.addEventListener("click", () => {
       trackPosition = -1;
     });
     btnGoContact.addEventListener("click", () => {
       trackPosition = -1;
     });
+
     if (trackPosition > 1) trackPosition = 1;
     if (trackPosition < -1) trackPosition = -1;
-    moveSection(trackPosition);
+
+    moveSection(trackPosition, f);
     mouseDownPosition = null;
   }
 }
@@ -50,7 +60,7 @@ function moveSection(direction) {
 function highlightActiveLink(link) {
   btnAbout.classList.remove("link--active");
   btnPortfolio.classList.remove("link--active");
-  btnContact.classList.remove("link--active");
+  btnContact2.classList.remove("link--active");
 
   if (link == 1) {
     btnAbout.classList.add("link--active");
@@ -67,7 +77,7 @@ function highlightActiveLink(link) {
     body.style.height = thisSection + 50 + "px";
   }
   if (link == -1) {
-    btnContact.classList.add("link--active");
+    btnContact2.classList.add("link--active");
     const thisSection = contact.offsetHeight;
 
     html.style.height = thisSection + 50 + "px";

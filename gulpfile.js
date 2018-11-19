@@ -16,9 +16,9 @@ gulp.task("sass", () => {
 
 gulp.task("img", () =>
   gulp
-    .src("src/images/*")
+    .src("src/img/**/*")
     .pipe(imagemin())
-    .pipe(gulp.dest("dist/images"))
+    .pipe(gulp.dest("dist/img/"))
 );
 
 gulp.task("browserSync", () => {
@@ -31,7 +31,7 @@ gulp.task("browserSync", () => {
 
 gulp.task("pref", () => {
   gulp
-    .src("dist/style/style.css")
+    .src("src/style/**/*.css")
     .pipe(
       autoprefixer({
         browsers: ["last 2 versions"],
