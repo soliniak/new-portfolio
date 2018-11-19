@@ -6,8 +6,10 @@
       font-size: 1rem
       margin-right: .5rem
 .contact__item
-      margin-top: 1rem
-      width: fit-content
+      &:last-child
+            margin-top: 1rem
+      &:hover
+            text-decoration: underline
 
 .contact__video
       height: 110%
@@ -25,7 +27,7 @@
       left: 0
       top: -2rem
       width: 100%
-      height: 410px
+      height: 100%
       overflow: hidden
       opacity: .5
 .contact-me
@@ -37,7 +39,8 @@
       &__data
             display: flex
             flex-direction: column
-            padding-bottom: .5rem
+            padding: 1rem
+            // padding-bottom: .5rem
 
 @media (min-width: 375px)
       .contact-me__container
@@ -55,7 +58,11 @@
       .contact-me__data
             flex-direction: row
             justify-content: space-around
-
+      .contact__item:last-child
+            margin-top: 0
+      .contact-me__container
+            padding-bottom: 0
+            padding: 1rem
 @media (min-width: 1366px)
       .contact-me__container
             top: 420px

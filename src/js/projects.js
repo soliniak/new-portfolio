@@ -5,13 +5,13 @@ const Projects = {
     src: "https://github.com/soliniak/Yoga",
     img: "img/project_icons/yoga.jpg",
     webp: "img/project_icons/yoga.webp",
-    alt: "WWW - Weekly WebDev Challenge #16",
+    alt: "WWW - WebDev Challenge #16",
     order: "10",
     stack: {
       html5: ["true", '<i class="fab fa-html5 icon--stack"></i>'],
       js: ["true", '<i class="fab fa-js icon--stack"></i>'],
       gulp: ["true", '<i class="fab fa-gulp icon--stack"></i>'],
-      photoshop: ["true", ""],
+      photoshop: ["true", '<i class="ps-icon icon--stack"></i>'],
       npm: ["true", '<i class="fab fa-npm icon--stack"></i>'],
       sass: ["true", '<i class="fab fa-sass icon--stack"></i>'],
       react: ["false", '<i class="fab fa-react icon--stack"></i>']
@@ -23,13 +23,13 @@ const Projects = {
     src: "https://github.com/soliniak/ZEST",
     img: "img/project_icons/zest.jpg",
     webp: "img/project_icons/zest.webp",
-    alt: "WWW - Weekly WebDev Challenge #12",
+    alt: "WWW - WebDev Challenge #12",
     order: "20",
     stack: {
       html5: ["true", '<i class="fab fa-html5 icon--stack"></i>'],
       js: ["true", '<i class="fab fa-js icon--stack"></i>'],
       gulp: ["true", '<i class="fab fa-gulp icon--stack"></i>'],
-      photoshop: ["true", ""],
+      photoshop: ["true", '<i class="ps-icon icon--stack"></i>'],
       npm: ["true", '<i class="fab fa-npm icon--stack"></i>'],
       sass: ["true", '<i class="fab fa-sass icon--stack"></i>'],
       react: ["false", '<i class="fab fa-react icon--stack"></i>']
@@ -47,7 +47,7 @@ const Projects = {
       html5: ["true", '<i class="fab fa-html5 icon--stack"></i>'],
       js: ["true", '<i class="fab fa-js icon--stack"></i>'],
       gulp: ["true", '<i class="fab fa-gulp icon--stack"></i>'],
-      photoshop: ["true", ""],
+      photoshop: ["true", '<i class="ps-icon icon--stack"></i>'],
       npm: ["true", '<i class="fab fa-npm icon--stack"></i>'],
       sass: ["true", '<i class="fab fa-sass icon--stack"></i>'],
       react: ["false", '<i class="fab fa-react icon--stack"></i>']
@@ -65,7 +65,7 @@ const Projects = {
       html5: ["true", '<i class="fab fa-html5 icon--stack"></i>'],
       js: ["true", '<i class="fab fa-js icon--stack"></i>'],
       gulp: ["true", '<i class="fab fa-gulp icon--stack"></i>'],
-      photoshop: ["false", ""],
+      photoshop: ["false", '<i class="ps-icon icon--stack"></i>'],
       npm: ["true", '<i class="fab fa-npm icon--stack"></i>'],
       sass: ["true", '<i class="fab fa-sass icon--stack"></i>'],
       react: ["false", '<i class="fab fa-react icon--stack"></i>']
@@ -83,7 +83,7 @@ const Projects = {
       html5: ["true", '<i class="fab fa-html5 icon--stack"></i>'],
       js: ["true", '<i class="fab fa-js icon--stack"></i>'],
       gulp: ["true", '<i class="fab fa-gulp icon--stack"></i>'],
-      photoshop: ["false", ""],
+      photoshop: ["false", '<i class="ps-icon icon--stack"></i>'],
       npm: ["true", '<i class="fab fa-npm icon--stack"></i>'],
       sass: ["true", '<i class="fab fa-sass icon--stack"></i>'],
       react: ["false", '<i class="fab fa-react icon--stack"></i>']
@@ -101,7 +101,7 @@ const Projects = {
       html5: ["true", '<i class="fab fa-html5 icon--stack"></i>'],
       js: ["true", '<i class="fab fa-js icon--stack"></i>'],
       gulp: ["true", '<i class="fab fa-gulp icon--stack"></i>'],
-      photoshop: ["true", ""],
+      photoshop: ["true", '<i class="ps-icon icon--stack"></i>'],
       npm: ["true", '<i class="fab fa-npm icon--stack"></i>'],
       sass: ["true", '<i class="fab fa-sass icon--stack"></i>'],
       react: ["true", '<i class="fab fa-react icon--stack"></i>']
@@ -114,12 +114,12 @@ const Projects = {
     img: "img/project_icons/tictactoe.jpg",
     webp: "img/project_icons/tictactoe.webp",
     alt: "Game - simple and funny",
-    order: "1",
+    order: "50",
     stack: {
       html5: ["true", '<i class="fab fa-html5 icon--stack"></i>'],
       js: ["true", '<i class="fab fa-js icon--stack"></i>'],
       gulp: ["false", '<i class="fab fa-gulp icon--stack"></i>'],
-      photoshop: ["false", ""],
+      photoshop: ["false", '<i class="ps-icon icon--stack"></i>'],
       npm: ["false", '<i class="fab fa-npm icon--stack"></i>'],
       sass: ["true", '<i class="fab fa-sass icon--stack"></i>'],
       react: ["false", '<i class="fab fa-react icon--stack"></i>']
