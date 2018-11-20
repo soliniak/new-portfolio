@@ -204,6 +204,18 @@
 .btn--live {
   margin-right: 5px; }
 
+.ps-icon {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background-image: url("../../img/ps-icon.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  background-position: center; }
+  .ps-icon:hover {
+    background-image: url("../../img/ps-icon--blue.png"); }
+
 @media (max-width: 350px) {
   .card__top {
     padding: 0; } }
@@ -251,24 +263,7 @@
     margin: 5px 0 0 1rem; }
   .about__skillset:first-child {
     order: 100;
-    align-self: self-start; }
-  .ps-icon {
-    height: 16px;
-    width: 16px;
-    display: inline-block;
-    background-image: url("../../img/ps-icon.png");
-    background-repeat: no-repeat;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center; }
-    .ps-icon:hover {
-      background-image: url("../../img/ps-icon--blue.png"); } }
+    align-self: self-start; } }
 
 @media (min-width: 1024px) {
   .portfolio {
