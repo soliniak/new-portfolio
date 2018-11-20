@@ -19,7 +19,10 @@
 
 .contact {
   left: calc(200vw - 100vw);
-  height: 90vh; }
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 @media (min-width: 1024px) {
   .about, .portfolio, .contact {
@@ -359,38 +362,17 @@
 .contact-me {
   text-align: center;
   display: none; }
-  .contact-me__container {
-    position: relative;
-    top: 230px; }
   .contact-me__data {
     display: flex;
     flex-direction: column;
     padding: 1rem; }
-
-@media (min-width: 375px) {
-  .contact-me__container {
-    top: 320px; }
-  .video__container {
-    height: 430px; } }
-
-@media (min-width: 414px) {
-  .contact-me__container {
-    top: 330px;
-    padding-bottom: 1rem; } }
 
 @media (min-width: 768px) {
   .contact-me__data {
     flex-direction: row;
     justify-content: space-around; }
   .contact__item:last-child {
-    margin-top: 0; }
-  .contact-me__container {
-    padding-bottom: 0;
-    padding: 1rem; } }
-
-@media (min-width: 1366px) {
-  .contact-me__container {
-    top: 420px; } }
+    margin-top: 0; } }
 
 * {
   box-sizing: border-box; }

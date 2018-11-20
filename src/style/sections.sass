@@ -3,10 +3,7 @@
     transition: all $animation-speed ease
     padding: 0 1rem
     position: absolute
-    // transform: translate(0 ,calc(100px + 1rem))
     padding-bottom: calc(100px + #{$gap} * 2)
-    // margin-bottom: 150px
-    // overflow: hidden
     top: calc(100px + #{$gap})
 
 .about
@@ -23,7 +20,9 @@
 .contact
     left: calc(200vw - #{$start-section})
     height: 90vh
-
+    display: flex
+    align-items: center
+    justify-content: center
 // ---------------------------- 1024
 @media (min-width: 1024px)
     $gap: 2rem
@@ -32,5 +31,3 @@
         transform: translate(#{$menu-vertical} ,0)
         padding-bottom: 2rem
         top: calc(100px + #{$gap})
-    // .contact
-    //     transform: translate(200px, calc(100px + 5px))
