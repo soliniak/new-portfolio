@@ -287,7 +287,7 @@
     padding: 10px 15px;
     font-size: .9rem;
     line-height: 1.2rem;
-    color: #b3b3b3;
+    color: #5d5d5d;
     flex-direction: column;
     list-style: circle; }
   .about__skillset {
@@ -415,7 +415,7 @@
   font-display: fallback; }
 
 a {
-  color: #b3b3b3;
+  color: #5d5d5d;
   font-family: Montserrat, Arial, sans-serif; }
 
 a:hover {
