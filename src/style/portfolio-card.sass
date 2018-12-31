@@ -174,7 +174,28 @@
         // padding: 0 3rem 0 2rem
         padding: 0 calc(#{$gap}) 0 $gap
         padding-right: $gap
-        padding-bottom: calc(100px + #{$gap} / 2)
+        padding-bottom: 1rem
+    .card__top
+        // display: none
+        width: 200px
+        .image__container
+            display: none
+        .card__about
+            padding: 0
+            height: 100px
+            justify-content: center
+            .card__top-title, .card__text
+                display: block
+                text-align: center
+                margin: 0
+                padding: 4px 0
+            .card__header
+                border: none
+            
+    .menu
+        // margin: 0
+    .about, .portfolio, .contact
+        top: 2rem
 
 ---------------------------- 1366
 @media (min-width: 1366px)
