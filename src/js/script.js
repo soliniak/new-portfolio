@@ -37,6 +37,24 @@ const Projects = {
       react: ["false", '<i class="fab fa-react icon--stack"></i>']
     }
   },
+  tableFiltering: {
+    name: "table filtering",
+    live: "https://soliniak.github.io/table_filtering/",
+    src: "https://github.com/soliniak/table_filtering",
+    img: "img/project_icons/tablefiltering.jpg",
+    webp: "img/project_icons/tablefiltering.webp",
+    alt: "Data filtering project",
+    order: "30",
+    stack: {
+      html5: ["true", '<i class="fab fa-html5 icon--stack"></i>'],
+      js: ["true", '<i class="fab fa-js icon--stack"></i>'],
+      gulp: ["false", '<i class="fab fa-gulp icon--stack"></i>'],
+      photoshop: ["false", '<i class="ps-icon icon--stack"></i>'],
+      npm: ["false", '<i class="fab fa-npm icon--stack"></i>'],
+      sass: ["true", '<i class="fab fa-sass icon--stack"></i>'],
+      react: ["false", '<i class="fab fa-react icon--stack"></i>']
+    }
+  },
   mogo: {
     name: "mogo",
     live: "https://soliniak.github.io/MoGo/",
