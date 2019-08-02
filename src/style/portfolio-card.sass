@@ -16,8 +16,6 @@
     font-family: Montserrat, Arial, sans-serif
     font-weight: 300
     position: relative
-    transition: background .1s ease
-    // overflow: hidden
     &__top
         position: fixed
         top: 0
@@ -30,7 +28,6 @@
         border-left: none
         border-right: none
         padding: 0 1rem
-
     &__description, &__about
         display: flex
         flex-direction: column
@@ -67,6 +64,12 @@
         padding-top: 5px 
         padding: 5px 5px 0 0
         // border-top: 1px solid $border-color
+
+.portfolio__card
+    transition: all .2s ease
+    &:hover
+        transform: scale(1.05)
+        box-shadow: 0 0 20px 1px #a7a7a720
 .text__top
     display: flex
     flex-direction: row
